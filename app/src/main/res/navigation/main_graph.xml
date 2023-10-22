@@ -5,6 +5,13 @@
     android:id="@+id/main_graph"
     app:startDestination="@id/horoscopeFragment">
 
+
+    <fragment
+        android:id="@+id/horoscopeFragment"
+        android:name="com.aristidevs.horoscapp.ui.home.horoscope.HoroscopeFragment"
+        android:label="fragment_horoscope"
+        tools:layout="@layout/fragment_horoscope" />
+
     <fragment
         android:id="@+id/palmistryFragment"
         android:name="com.aristidevs.horoscapp.ui.palmistry.PalmistryFragment"
@@ -15,9 +22,4 @@
         android:name="com.aristidevs.horoscapp.ui.luck.LuckFragment"
         android:label="fragment_luck"
         tools:layout="@layout/fragment_luck" />
-    <fragment
-        android:id="@+id/horoscopeFragment"
-        android:name="com.aristidevs.horoscapp.ui.home.horoscope.HoroscopeFragment"
-        android:label="fragment_horoscope"
-        tools:layout="@layout/fragment_horoscope" />
 </navigation>

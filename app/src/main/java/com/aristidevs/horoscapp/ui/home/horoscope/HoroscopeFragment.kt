@@ -43,7 +43,7 @@ class HoroscopeFragment : Fragment() {
     private fun initList() {
         horoscopeadapter = HoroscopeAdapter()
         binding.rvHoroscope.apply {
-            layoutManager = LinearLayoutManager(context)
+            layoutManager = GridLayoutManager(context, 2)
             adapter = horoscopeadapter
 
         }
