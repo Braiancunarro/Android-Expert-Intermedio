@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import com.aristidevs.horoscapp.R
 import com.aristidevs.horoscapp.databinding.FragmentLuckBinding
 import com.aristidevs.horoscapp.databinding.FragmentPalmistryBinding
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
 
 class PalmistryFragment : Fragment() {
 

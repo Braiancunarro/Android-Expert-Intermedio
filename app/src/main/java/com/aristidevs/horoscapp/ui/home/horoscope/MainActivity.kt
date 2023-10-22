@@ -1,4 +1,4 @@
-package com.aristidevs.horoscapp.ui.home
+package com.aristidevs.horoscapp.ui.home.horoscope
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,8 +8,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.aristidevs.horoscapp.R
 import com.aristidevs.horoscapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 import java.security.AccessController
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding

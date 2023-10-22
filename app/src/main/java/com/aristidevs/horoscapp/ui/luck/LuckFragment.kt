@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import com.aristidevs.horoscapp.R
 import com.aristidevs.horoscapp.databinding.FragmentHoroscopeBinding
 import com.aristidevs.horoscapp.databinding.FragmentLuckBinding
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
 
 class LuckFragment : Fragment() {
     private var _binding: FragmentLuckBinding? = null
