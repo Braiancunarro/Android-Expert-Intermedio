@@ -56,17 +56,39 @@ class HoroscopeDetailActivity : AppCompatActivity() {
     }
 
     private fun loadingState() {
-        binding.pb.isVisible = true
+       binding.pb.isVisible = true
     }
     private fun errorState(){
         binding.pb.isVisible = false
 
+       binding.ivError
+        binding.tvError
 
     }
     private fun successState(state: HoroscopeDetailState.Success) {
     binding.pb.isVisible = false
-        binding.tvTitle.text = state.sing
-        binding.tvBody.text = state.prediction
+
+        val title = when(state.horoscopeModel){
+            Aries -> R.string.aries
+            Taurus -> R.string.taurus
+            Gemini -> R.string.gemini
+            Cancer -> R.string.cancer
+            Leo -> R.string.leo
+            Virgo -> R.string.virgo
+            Libra -> R.string.libra
+            Scorpio -> R.string.scorpio
+            Sagittarius -> R.string.sagittarius
+            Capricorn -> R.string.capricorn
+            Aquarius -> R.string.aquarius
+            Pisces -> R.string.pisces
+        }
+        binding.tvTitle.setText(title)
+
+
+
+
+        //   binding.tvTitle.text = state.sing
+        //binding.tvBody.text = state.prediction
 
          val image = when(state.horoscopeModel){
             Aries -> R.drawable.detail_aries

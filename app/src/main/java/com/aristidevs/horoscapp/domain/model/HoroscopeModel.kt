@@ -13,5 +13,4 @@ enum class HoroscopeModel {
     Capricorn,
     Aquarius,
     Pisces
-
 }

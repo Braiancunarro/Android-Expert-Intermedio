@@ -13,4 +13,5 @@ data class PredictionResponse(
             horoscope = horoscope,
             sing = sign)
     }
+
 }

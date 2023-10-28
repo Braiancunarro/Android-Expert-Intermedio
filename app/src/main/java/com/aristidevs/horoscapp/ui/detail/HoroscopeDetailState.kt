@@ -1,6 +1,7 @@
 package com.aristidevs.horoscapp.ui.detail
 
 import com.aristidevs.horoscapp.domain.model.HoroscopeModel
+import com.aristidevs.horoscapp.domain.model.PredictionModel
 
 sealed class HoroscopeDetailState {
 
